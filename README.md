@@ -30,7 +30,7 @@ The original goal was to create a synthesizer capable of generating vowel-like a
 
 ASM is a single-file HTML application – no installation required!
 
-1. **Download**: Clone this repository or download `ASM.1.6.html`.
+1. **Download**: Clone this repository or download `ASM.1.7.html`.
 2. **Run**: Open the file in a modern web browser (e.g., Chrome, Firefox). Ensure your browser supports the Web Audio API (most do).
 3. **Permissions**: The first click may prompt for audio access; allow it to enable sound.
 4. **Dependencies**: None, everything is self-contained.
