@@ -2,134 +2,202 @@
 
 ![ASM Screenshot](https://raw.githubusercontent.com/DigiMancer3D/ASM/refs/heads/main/Screenshot_20260205_003114.png) 
 
+## Why
+##### With the right tools where we all can recreate the same experiement can we then discover what we previously didn't understand or know.
+
+&nbsp;&nbsp;&nbsp;Since autistic parents and guardians began gathering to swap help and gain a socially active community around people caring for autistic indivduals has also created a social system with autistic indivduals and this is when the vowel-like autsitic emotinal language was really begining to be seen. Nowadays, many peoples have seen or heard these sounds unaware they could be potential communications from non-verbal or non-speaking individuals. Some people within and around the autistic communities have determined and prooven that the mimicking seen amoungst autistic indiviuals when around other autisitc individuals is potentially a form of interaction by autistic individuals. Now, anyone can test this theroy. Now, anyone can share their loved one's sounds in-hopes to find out what they mean for them. Hopefully one day in our future, caregivers, parents, family and friends of non-verbal autistic indivuals may be able to know what they are saying and for some may be able to communicate back with them.
+
+---
+
 ## Overview
 
-The Autistic Synth Machine (ASM) is a web-based audio synthesizer designed to generate and manipulate vowel-like sounds, hums, and groans that mimic non-verbal vocalizations often associated with autistic communication. Built using HTML, CSS, and JavaScript with the Web Audio API, it allows users to create customizable synthetic sounds, apply effects, loop them, and sequence multiple sounds into patterns. This tool aims to facilitate exploration and replication of "autistic vowel language", sequences of sounds and gaps, that could potentially aid in understanding or communicating with non-verbal autistic individuals.
+&nbsp;&nbsp;&nbsp;The Autistic Synth Machine (ASM) version 2.2 is a web-based audio synthesizer designed to generate and manipulate vowel-like sounds, hums, groans, and imported audio that mimic non-verbal vocalizations often associated with autistic communication. Built using HTML, CSS, and JavaScript with the Web Audio API, it allows users to create customizable synthetic sounds, apply a wide range of effects, loop them, sequence multiple sounds into patterns, import external audio files, and even record from a microphone. This tool aims to facilitate exploration and replication of "autistic vowel language", sequences of sounds and gaps to express emotion, that could potentially aid in understanding or communicating with non-verbal autistic individuals.
 
-### Does It Meet the Original Goal?
-The original goal was to create a synthesizer capable of generating vowel-like audio forms, building sequences of sounds and gaps to form an "autistic vowel language," mimicking heard non-verbal vocalized noises for communication purposes. It should also support generating, sequencing, storing, and listening to these sounds.
-
-- **Strengths and Alignment**: ASM excels in sound generation and sequencing. It produces realistic vowel approximations (e.g., /ɑ/, /i:/) with fine-tuned parameters for pitch, formants, breathiness, and more. The sequencer allows building patterns with gaps and loops, enabling the creation of rhythmic "language-like" sequences. This directly supports mimicking and experimenting with non-verbal sounds.
-  
-- **Gaps and Shortcomings**: While generation and sequencing are robust, **storage** is absent. Users cannot save/load presets, sequences, or recordings. Listening is real-time only, with no export options (e.g., WAV/MP3). The interface is functional but could be more accessible (e.g., for users with sensory sensitivities; i.e., have dark/light/medium themes and have a simple or advanced User Interface [dials for simple, sliders for advanced]). Overall, it partially meets the goal but requires enhancements for full storage and playback capabilities.
+&nbsp;&nbsp;&nbsp;Key enhancements in version 2.2 include support for importing WAV/audio files as "media" sounds with dedicated controls (e.g., playback speed, pitch shift, reverse, trimming, EQ), microphone recording for capturing real vocalizations, global master effects like compressor and delay, BPM synchronization, dynamic sequencer step adjustments, preset/sequence saving/loading/export/import, audio export for individual sounds or full sequences, and improved UI with fine-tune buttons and value displays.
 
 ## Features
 
-- **Sound Generation**: Create vowel-like sounds using presets (e.g., "Ah", "Ee", "Hum", "Groan") with adjustable parameters for pitch, volume, ADSR envelope (Attack, Decay, Sustain, Release), formant frequencies/gains, and effects like vibrato, reverb, breathiness, humming, jaw jitter, pitch jitter, and amplitude shimmer.
-- **Multiple Sounds**: Start with Sound A; add more (B, C, etc.) dynamically.
-- **Looping**: Enable looping for individual sounds with customizable gaps (0-3 seconds) to simulate repetitive vocalizations.
-- **Transitions**: Smooth morphing between start, mid, and end vowel presets over a transition time (0-5 seconds).
-- **Sequencer**: An 8-step sequencer to trigger sounds in patterns, with global loop and gap controls. Supports polyphony (multiple sounds per step).
-- **Live Adjustments**: Real-time parameter tweaks while sounds play.
-- **Reset Options**: Per-parameter reset or full sound reset to defaults.
-- **Tooltips**: Hover over sliders for value display.
-- **Responsive Design**: Adapts to different screen sizes for mobile/desktop use.
-- **Effects**: Reverb, detune, and various modulations for naturalistic variations.
+- **Master Controls**: Global compressor (threshold, ratio, makeup gain), delay (time, feedback), BPM setting (30-300) for timing synchronization, and BPM Sync toggle for aligning loops to beats.
+- **Sound Generation (Vowels)**: Create vowel-like sounds using extensive presets (e.g., "Ah", "Ee", "Hum", "Groan", diphthongs like "Ai", nasals, elongated sounds) with adjustable parameters for pitch, ADSR envelope (Attack, Decay, Sustain, Release), hold duration, formant frequencies/gains (F1-F6), and effects like humming, breathiness, jaw jitter, detune, vibrato, reverb, pitch jitter, amplitude shimmer, distortion, chorus, LFO assignment, noise gate, and waveform selection (glottal, sine, sawtooth, square).
+- **Media Import**: Load external WAV or audio files as sounds, with controls for playback speed (0.5-2x), pitch shift (-1200 to 1200 cents), reverse playback, trim start/end, 3-band EQ (freq/gain for low/mid/high), alongside shared features like volume, pan, reverb, fades, and looping.
+- **Multiple Sounds**: Start with Sound A; dynamically add more (B, C, etc.) via "Add Sound" button. Mix vowels and imported media.
+- **Looping**: Enable per-sound looping with customizable gaps (0-3s); supports BPM-sync for rhythmic alignment.
+- **Transitions and Fades**: Smooth morphing between start/mid/end presets over transition time (0-5s); bell-curve fade-in/out (0-2s) for natural starts/ends.
+- **Sequencer**: Dynamic 8+ step sequencer (increase/decrease steps) to trigger sounds in patterns. Supports polyphony, global loop with gap (0-3s), and saving/loading/export/import of sequences including sound presets.
+- **Live Adjustments**: Real-time tweaks to most parameters while playing; fine-tune sliders with +/- buttons.
+- **Presets and Sequences**: Save/load/export/import individual sound presets or full sequences (including all sound settings and step triggers) as JSON files.
+- **Audio Export**: Export individual sounds or full sequences as WAV files.
+- **Mic Recording**: Record audio from microphone, play back, and export as WAV.
+- **Reset Options**: Per-parameter reset (via label click) or full sound reset; global resets to defaults.
+- **Responsive Design**: Adapts slider layout for different screen sizes (mobile to desktop).
+- **Performance**: Uses Web Audio API for efficient synthesis; handles multiple simultaneous sounds.
+
+---
 
 ## Installation and Setup
 
-ASM is a single-file HTML application – no installation required!
+ASM is a single-file HTML application. No installation or server required!
 
-1. **Download**: Clone this repository or download `ASM.1.7.html`.
-2. **Run**: Open the file in a modern web browser (e.g., Chrome, Firefox). Ensure your browser supports the Web Audio API (most do).
-3. **Permissions**: The first click may prompt for audio access; allow it to enable sound.
-4. **Dependencies**: None, everything is self-contained.
+1. **Download**: Clone this repository or download `ASM.2.2.html`.
+2. **Run**: Open the file in a modern web browser (e.g., Chrome, Firefox, Edge). Ensure the browser supports the Web Audio API (most current versions do).
+3. **Permissions**: On first interaction, the browser may prompt for audio/microphone access; allow it to enable sound playback and recording.
+4. **Dependencies**: None, everything is self-contained in the HTML file.
+5. **Browser Notes**: For optimal performance, use headphones or external speakers. If audio doesn't play, check browser settings (e.g., autoplay policies) or resume the AudioContext via a click. Microphone recording requires HTTPS or localhost in some browsers.
 
-**Note**: For best performance, use headphones or speakers. If audio doesn't play, check browser audio settings or try resuming the AudioContext via a click.
+**Note**: Test in incognito mode if extensions interfere. The app works offline after inital loading.
 
 ## Usage
 
-### Basic Sound Creation
-1. **Select a Preset**: Use the "Start Preset," "Mid Preset," or "End Preset" dropdowns to choose vowel types (e.g., "Ah" for open vowel sounds).
+### Master Controls
+- **Compressor**: Toggle on/off; adjust threshold (-60-0 dB, default -24), ratio (1-20, default 12), makeup gain (0-24 dB, default 0) for dynamic range control.
+- **Delay**: Toggle on/off; set time (0-2s, default 0.3) and feedback (0-1, default 0.5) for echo effects.
+- **BPM**: Set tempo (30-300, default 120) for synchronization.
+- **BPM Sync**: Toggle to align loop gaps to beat timing.
+
+Changes apply globally and update in real-time.
+
+--
+
+### Sound Creation (Default Type)
+1. **Select Presets**: Choose from "Start Preset," "Mid Preset," or "End Preset" dropdowns (e.g., "Ah (/ɑ/)", "Hum", "Spanish A", diphthongs like "Ai", nasals like "A nasal"). Presets auto-set formants; changing start updates mid/end if transition is 0.
 2. **Adjust Parameters**:
-   - **Pitch (1-650 Hz)**: Base frequency; lower for deeper groans, higher for squeals.
-   - **Volume (0-1)**: Overall loudness.
-   - **ADSR Envelope**:
-     - Attack (0-2s): Time to reach full volume.
-     - Decay (0-2s): Time to drop to sustain level.
-     - Sustain (0-1): Hold level after decay.
-     - Release (0-2s): Fade-out time after hold.
-   - **Hold Duration (0.1-10s)**: How long the sound sustains.
-   - **Formants (F1-F6 Freq/Gain)**: Shape the vowel timbre (e.g., F1 low for dark sounds).
-   - **Effects**:
-     - Humming/Breathiness/Jaw Jitter: Add nasal, airy, or wobbly qualities.
-     - Vibrato/Pitch Jitter/Amplitude Shimmer: For natural fluctuations.
-     - Reverb (0-1): Add echo for spatial feel.
-     - Detune (-1200-1200 cents): Slight pitch offset for chorusing.
-   - **Loop**: Check to repeat; set "Loop Gap" for pauses between loops.
-   - **Transition (0-5s)**: Time to morph from start to mid to end presets.
-3. **Play/Stop**: Click "Play" to start (toggles to "Pause"); "Stop" for immediate halt.
-4. **Reset**: Click "Reset" for the sound or per-slider via label click (shows Reset/Cancel).
+   - **Pitch (1-650 Hz, default 47)**: Base frequency; low for groans, high for squeals.
+   - **Volume (0-1, default 0.33)**: Loudness.
+   - **Pan (-1-1, default 0)**: Stereo position.
+   - **ADSR Envelope**: Attack (0-2s, default 0.3), Decay (0-2s, default 0.4), Sustain (0-1, default 0.7), Release (0-2s, default 0.3).
+   - **Hold Duration (0.1-10s, default 3)**: Sustain length.
+   - **Formants (F1-F6)**: Freq (varies, e.g., F1 200-1000 Hz) and Gain (-40-40 dB, default 20); shape timbre.
+   - **Humming**: Strength (0-30 dB, default 0), Depth (100-500 Hz, default 175), Amount (1-20, default 10); nasal quality.
+   - **Breathiness**: Strength (0-0.2, default 0), Depth (500-2000 Hz, default 1795), Amount (0.1-2, default 1.2); airy noise.
+   - **Jaw Jitter**: Strength (0-20 cents, default 0), Depth (0-50 Hz, default 41), Amount (0-1 Hz, default 0.77); formant wobble.
+   - **Detune (-1200-1200 cents, default 0)**: Second oscillator offset.
+   - **Vibrato**: Rate (0-10 Hz, default 0), Depth (0-200 cents, default 0); pitch modulation.
+   - **Reverb Wet (0-1, default 0)**: Echo mix.
+   - **Pitch Jitter**: Rate (0-2 Hz, default 0), Depth (0-20 cents, default 0); random pitch variation.
+   - **Amplitude Shimmer**: Rate (0-2 Hz, default 0), Depth (0-0.2, default 0); volume fluctuation.
+   - **Waveform**: Glottal (default), Sine, Sawtooth, Square.
+   - **Distortion**: Toggle; Intensity (0-1, default 0), Threshold (0-1, default 0.5).
+   - **Chorus**: Toggle; Rate (0-10 Hz, default 0), Depth (0-50%, default 0).
+   - **LFO Assign**: None (default) or to F1-F6 Freq/Gain; Rate (0-10 Hz, default 0), Depth (0-100%, default 0).
+   - **Noise Gate**: Toggle; Threshold (-60-0 dB, default -30).
+   - **Fade-In/Out (0-2s, default 0.1)**: Bell-curve fades.
+   - **Loop**: Toggle; Gap (0-3s, default 0).
+   - **Transition (0-5s, default 0)**: Morph time between presets.
+3. **Play/Pause/Stop**: "Play" starts/toggles pause; "Stop" halts immediately.
+4. **Fine-Tune**: Use +/- buttons on sliders for step adjustments.
+5. **Reset**: Label click shows Reset/Cancel per param; "Reset" button for full sound.
+6. **Presets**: Save/Load/Export/Import sound settings as JSON.
 
-### Adding More Sounds
-- Click "Add Sound" to create Sound B, C, etc. Each has independent controls.
+--
 
-### Using the Sequencer
-1. **Enable Steps**: In the Sequencer section, check boxes for each sound (rows) and step (columns 1-8).
-2. **Play Sequence**: Click "Play Sequence" to trigger checked sounds step-by-step.
-3. **Controls**:
-   - **Sequence Loop Gap (0-3s)**: Pause between full sequence loops.
-   - **Loop Sequence**: Check to repeat indefinitely.
-4. **Stop Sequence**: Halts playback and stops all sounds.
-5. **Behavior**: Each step plays triggered sounds fully (including their hold/release), then advances based on the longest sound duration + gap. Looping sounds continue across steps.
+### Media Sound Creation (Via Import)
+1. **Import Audio**: Click "Import Audio" in Sequencer; select WAV/audio file, creates a new "Media X" section.
+2. **Adjust Parameters** (Shared + Media-Specific):
+   - Shared: Volume, Pan, Reverb, Fade-In/Out, Loop/Gap.
+   - **Playback Speed (0.5-2, default 1)**: Slow down/speed up.
+   - **Pitch Shift (-1200-1200 cents, default 0)**: Tune up/down.
+   - **Reverse**: Toggle to play backward.
+   - **Trim Start/End (0-max duration, default 0/full)**: Crop audio.
+   - **EQ1-3**: Freq (20-20000 Hz, defaults 250/1000/5000), Gain (-40-40 dB, default 0); low/mid/high bands.
+3. **Play/Pause/Stop/Reset**: Same as vowels; reset restores defaults.
+
+--
+
+### Sequencer
+1. **Add Steps**: Use "Increase/Decrease Sequence" to adjust columns (min 2).
+2. **Trigger Sounds**: Check boxes per sound (rows) and step.
+3. **Play Sequence**: Triggers checked sounds per step, advancing after longest duration.
+4. **Controls**: "Stop Sequence" halts; "Loop Sequence" repeats; "Sequence Loop Gap" (0-3s) pauses between cycles.
+5. **Save/Load/Export/Import**: Full sequences (steps + all sound presets) as JSON.
+6. **Export Sequence Audio**: Renders full sequence as WAV (non-looping for export).
+
+--
+
+### Microphone Recording
+1. **Start Record**: Begins mic input; shows timer.
+2. **Stop Record**: Ends recording.
+3. **Play Record**: Plays back.
+4. **Export Record**: Downloads as WAV.
+
+---
 
 ### Tips
-- **Mimicking Autistic Vocalizations**: Start with low pitch (e.g., 47 Hz), add breathiness/humming for realism, and use the sequencer for patterned "phrases" with gaps.
-- **Experimentation**: Tweak formants for unique timbres; use jitter/shimmer for variability.
-- **Performance**: On slower devices, limit active sounds to avoid lag.
-- **Accessibility**: The interface is text-based; consider screen readers for labels.
+- **Autistic Vocal Mimicry**: Use low pitches, breathiness/humming for realism; sequencer for "conversations" with gaps.
+- **Mixing**: Combine vowels/media; use pan for stereo separation.
+- **Sync**: Enable BPM Sync for rhythmic loops.
+- **Export**: Great for sharing sounds/sequences.
+- **Performance**: Limit sounds/steps on mobile; close tabs if lag.
+- **Customization**: Import real vocal samples, tweak EQ for matching.
+- **Accessibility**: Labels for screen readers; keyboard-navigable sliders.
+
+---
 
 ## Parameter Reference Table
 
-| Category | Parameter | Range | Default | Description |
-|----------|-----------|-------|---------|-------------|
-| **Presets** | Start/Mid/End Preset | Options: Ah, Ee, I, U, O, Y, Hum, Groan | Ah | Vowel starting/middle/ending shape. |
-| **Core** | Pitch | 1-650 Hz | 47 | Base frequency. |
-| **Core** | Volume | 0-1 | 0.33 | Loudness. |
-| **Envelope** | Attack | 0-2s | 0.3 | Ramp-up time. |
-| **Envelope** | Decay | 0-2s | 0.4 | Drop to sustain. |
-| **Envelope** | Sustain | 0-1 | 0.7 | Hold level. |
-| **Envelope** | Release | 0-2s | 0.3 | Fade-out time. |
-| **Envelope** | Hold Duration | 0.1-10s | 3 | Sustain length. |
-| **Looping** | Loop | Checkbox | False | Repeat sound. |
-| **Looping** | Loop Gap | 0-3s | 0 | Pause between loops. |
-| **Transition** | Transition Time | 0-5s | 0 | Morph duration between presets. |
-| **Formants** | F1-F6 Freq | Varies (e.g., 200-1000 Hz for F1) | Preset-dependent | Frequency peaks for vowel timbre. |
-| **Formants** | F1-F6 Gain | -40-40 dB | 20 | Boost/cut for each formant. |
-| **Effects** | Humming Strength/Depth/Amount | 0-30 dB / 100-500 Hz / 1-20 | 0 / 175 / 10 | Nasal hum addition. |
-| **Effects** | Breathiness Strength/Depth/Amount | 0-0.2 / 500-2000 Hz / 0.1-2 | 0 / 1795 / 1.2 | Airy breath noise. |
-| **Effects** | Jaw Jitter Strength/Depth/Amount | 0-20 cents / 0-50 Hz / 0-1 Hz | 0 / 41 / 0.77 | Formant wobble. |
-| **Effects** | Detune | -1200-1200 cents | 0 | Pitch offset for second oscillator. |
-| **Effects** | Vibrato Rate/Depth | 0-10 Hz / 0-200 cents | 0 / 0 | Pitch modulation. |
-| **Effects** | Reverb Wet | 0-1 | 0 | Reverb mix. |
-| **Effects** | Pitch Jitter Rate/Depth | 0-2 Hz / 0-20 cents | 0 / 0 | Random pitch variation. |
-| **Effects** | Amplitude Shimmer Rate/Depth | 0-2 Hz / 0-0.2 | 0 / 0 | Volume fluctuation. |
-| **Fades** | Fade-In/Fade-Out Time | 0-2s | 0.1 | Global fade (not fully implemented in code; uses envelope). |
+| Category       | Parameter              | Range/Default          | Description |
+|----------------|------------------------|------------------------|-------------|
+| **Master**     | Compressor Toggle      | On/Off (Off)           | Global dynamic compression. |
+| **Master**     | Comp Threshold         | -60-0 dB (-24)         | Level to start compressing. |
+| **Master**     | Comp Ratio             | 1-20 (12)              | Compression amount. |
+| **Master**     | Comp Makeup            | 0-24 dB (0)            | Post-compression gain. |
+| **Master**     | Delay Toggle           | On/Off (Off)           | Global echo. |
+| **Master**     | Delay Time             | 0-2s (0.3)             | Echo delay. |
+| **Master**     | Delay Feedback         | 0-1 (0.5)              | Echo repeats. |
+| **Master**     | BPM                    | 30-300 (120)           | Tempo for sync. |
+| **Master**     | BPM Sync               | On/Off (Off)           | Align gaps to beats. |
+| **Core**       | Pitch                  | 1-650 Hz (47)          | Base frequency. |
+| **Core**       | Volume                 | 0-1 (0.33)             | Loudness. |
+| **Core**       | Pan                    | -1-1 (0)               | Stereo position. |
+| **Envelope**   | Attack                 | 0-2s (0.3)             | Ramp-up. |
+| **Envelope**   | Decay                  | 0-2s (0.4)             | Drop to sustain. |
+| **Envelope**   | Sustain                | 0-1 (0.7)              | Hold level. |
+| **Envelope**   | Release                | 0-2s (0.3)             | Fade-out. |
+| **Envelope**   | Hold Duration          | 0.1-10s (3)            | Sustain length. |
+| **Fades**      | Fade-In Time           | 0-2s (0.1)             | Bell-curve start fade. |
+| **Fades**      | Fade-Out Time          | 0-2s (0.1)             | Bell-curve end fade. |
+| **Looping**    | Loop                   | On/Off (Off)           | Repeat sound. |
+| **Looping**    | Loop Gap               | 0-3s (0)               | Pause between loops. |
+| **Transition** | Transition Time        | 0-5s (0)               | Morph presets. |
+| **Formants**   | F1 Freq/Gain           | 200-1000 Hz / -40-40 dB (500/20) | Vowel shaping. |
+| **Formants**   | F2 Freq/Gain           | 500-3000 Hz / -40-40 dB (750/20) | (Similar for F3-F6 with varying ranges/defaults). |
+| **Humming**    | Strength/Depth/Amount  | 0-30 dB (0) / 100-500 Hz (175) / 1-20 (10) | Nasal hum. |
+| **Breathiness**| Strength/Depth/Amount  | 0-0.2 (0) / 500-2000 Hz (1795) / 0.1-2 (1.2) | Airy noise. |
+| **Jaw Jitter** | Strength/Depth/Amount  | 0-20 cents (0) / 0-50 Hz (41) / 0-1 Hz (0.77) | Formant variation. |
+| **Detune**     | Detune Cents           | -1200-1200 (0)         | Oscillator offset. |
+| **Vibrato**    | Rate/Depth             | 0-10 Hz (0) / 0-200 cents (0) | Pitch modulation. |
+| **Reverb**     | Wet                    | 0-1 (0)                | Echo mix. |
+| **Jitter**     | Pitch Rate/Depth       | 0-2 Hz (0) / 0-20 cents (0) | Random pitch. |
+| **Shimmer**    | Amplitude Rate/Depth   | 0-2 Hz (0) / 0-0.2 (0) | Volume fluctuation. |
+| **Waveform**   | Waveform               | Glottal/Sine/Sawtooth/Square (Glottal) | Oscillator type. |
+| **Distortion** | Toggle/Intensity/Threshold | On/Off (Off) / 0-1 (0) / 0-1 (0.5) | Clipping effect. |
+| **Chorus**     | Toggle/Rate/Depth      | On/Off (Off) / 0-10 Hz (0) / 0-50% (0) | Modulation effect. |
+| **LFO**        | Assign/Rate/Depth      | None or F/G1-6 (None) / 0-10 Hz (0) / 0-100% (0) | Low-frequency oscillation. |
+| **Noise Gate** | Toggle/Threshold       | On/Off (Off) / -60-0 dB (-30) | Cut low-level noise. |
+| **Media-Specific** | Playback Speed     | 0.5-2 (1)              | Speed adjustment. |
+| **Media-Specific** | Pitch Shift        | -1200-1200 (0)         | Tune shift. |
+| **Media-Specific** | Reverse            | On/Off (Off)           | Backward play. |
+| **Media-Specific** | Trim Start/End     | 0-duration (0/full)    | Crop audio. |
+| **Media-Specific** | EQ1 Freq/Gain      | 20-20000 Hz (250) / -40-40 (0) | Low band. |
+| **Media-Specific** | EQ2 Freq/Gain      | 20-20000 Hz (1000) / -40-40 (0) | Mid band. |
+| **Media-Specific** | EQ3 Freq/Gain      | 20-20000 Hz (5000) / -40-40 (0) | High band. |
+| **Sequencer**  | Steps                  | 2+ (8)                 | Dynamic columns. |
+| **Sequencer**  | Sequence Gap           | 0-3s (0)               | Loop pause. |
+| **Sequencer**  | Loop Sequence          | On/Off (Off)           | Repeat sequence. |
 
-## Action Plan for Improvements
-To fully align with the original goal (especially storage and listening), here's a prioritized roadmap:
-
-1. **Short-Term (Next Version - ASM 1.7)**:
-   - Add save/load for individual sound presets (JSON via localStorage or file export).
-   - Implement sequence saving/loading.
-   - Add audio export (e.g., record and download as WAV using MediaRecorder API).
-
-2. **Medium-Term**:
-   - Add recording/playback of generated sequences for "listening" archives.
-   - Improve accessibility: Color contrasts, keyboard navigation, ARIA labels.
-   - Expand sequencer: Variable steps (e.g., expandable steps being added), tempo control.
-
-3. **Long-Term**:
-   - Machine learning integration: Analyze uploaded audio to auto-generate mimicking presets.
-   - Community features: Share presets/sequences via hashings with a simple backend.
-   - Testing with autistic users for feedback on sound realism, usability, and how autistics respond to the sounds this synth generates.
-
+---
 
 ## License
-MIT License – Free to use, modify, and distribute. See [LICENSE](LICENSE) for details.
+
+MIT License: Free to use, modify, and distribute. See [LICENSE](LICENSE) for details.
+
+---
 
 ## Credits
+
 - Built with Web Audio API.
 - Inspired by watching autistic individuals seemingly communicate publicly in this vowel-like manner.
 - Original code by [3Douglas "3D"](https://x.com/Z0M8I3D).
 - Code assisted by [GROK 4](https://grok.com).
+  
+---
+
