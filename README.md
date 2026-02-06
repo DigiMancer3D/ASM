@@ -1,11 +1,15 @@
 # Autistic Synth Machine (ASM)
 
-![ASM Screenshot](https://raw.githubusercontent.com/DigiMancer3D/ASM/refs/heads/main/Screenshot_20260205_003114.png) 
 
 ## Why
 ##### With the right tools where we all can recreate the same experiement can we then discover what we previously didn't understand or know.
 
 &nbsp;&nbsp;&nbsp;Since autistic parents and guardians began gathering to swap help and gain a socially active community around people caring for autistic indivduals has also created a social system with autistic indivduals and this is when the vowel-like autsitic emotinal language was really begining to be seen. Nowadays, many peoples have seen or heard these sounds unaware they could be potential communications from non-verbal or non-speaking individuals. Some people within and around the autistic communities have determined and prooven that the mimicking seen amoungst autistic indiviuals when around other autisitc individuals is potentially a form of interaction by autistic individuals. Now, anyone can test this theroy. Now, anyone can share their loved one's sounds in-hopes to find out what they mean for them. Hopefully one day in our future, caregivers, parents, family and friends of non-verbal autistic indivuals may be able to know what they are saying and for some may be able to communicate back with them.
+
+---
+
+###### screenshot of main program view
+![ASM Screenshot](https://raw.githubusercontent.com/DigiMancer3D/ASM/refs/heads/main/Screenshot_20260206_092655.png) 
 
 ---
 
@@ -183,6 +187,14 @@ Changes apply globally and update in real-time.
 | **Sequencer**  | Steps                  | 2+ (8)                 | Dynamic columns. |
 | **Sequencer**  | Sequence Gap           | 0-3s (0)               | Loop pause. |
 | **Sequencer**  | Loop Sequence          | On/Off (Off)           | Repeat sequence. |
+
+---
+
+###### screenshot of main sound section
+![ASM Screenshot](https://raw.githubusercontent.com/DigiMancer3D/ASM/refs/heads/main/Screenshot_20260206_092707.png) 
+
+###### screenshot of main program bottom
+![ASM Screenshot](https://raw.githubusercontent.com/DigiMancer3D/ASM/refs/heads/main/Screenshot_20260206_092724.png) 
 
 ---
 
