@@ -2,9 +2,9 @@
 
 
 ## Why
-##### With the right tools where we all can recreate the same experiement can we then discover what we previously didn't understand or know.
+##### With the right tools where we all can recreate the same experiment can we then discover what we previously didn't understand or know.
 
-&nbsp;&nbsp;&nbsp;Since autistic parents and guardians began gathering to swap help and gain a socially active community around people caring for autistic indivduals has also created a social system with autistic indivduals and this is when the vowel-like autsitic emotinal language was really begining to be seen. Nowadays, many peoples have seen or heard these sounds unaware they could be potential communications from non-verbal or non-speaking individuals. Some people within and around the autistic communities have determined and prooven that the mimicking seen amoungst autistic indiviuals when around other autisitc individuals is potentially a form of interaction by autistic individuals. Now, anyone can test this theroy. Now, anyone can share their loved one's sounds in-hopes to find out what they mean for them. Hopefully one day in our future, caregivers, parents, family and friends of non-verbal autistic indivuals may be able to know what they are saying and for some may be able to communicate back with them.
+&nbsp;&nbsp;&nbsp;Since autistic parents and guardians began gathering to swap help and gain a socially active community around people caring for autistic individuals has also created a social system with autistic individuals and this is when the vowel-like autistic emotional language was really beginning to be seen. Nowadays, many peoples have seen or heard these sounds unaware they could be potential communications from non-verbal or non-speaking individuals. Some people within and around the autistic communities have determined and proven that the mimicking seen amongst autistic individuals when around other autistic individuals is potentially a form of interaction by autistic individuals. Now, anyone can test this theory. Now, anyone can share their loved one's sounds in-hopes to find out what they mean for them. Hopefully one day in our future, caregivers, parents, family and friends of non-verbal autistic individuals may be able to know what they are saying and for some may be able to communicate back with them.
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## Overview
 
-&nbsp;&nbsp;&nbsp;The Autistic Synth Machine (ASM) version 2.2 is a web-based audio synthesizer designed to generate and manipulate vowel-like sounds, hums, groans, and imported audio that mimic non-verbal vocalizations often associated with autistic communication. Built using HTML, CSS, and JavaScript with the Web Audio API, it allows users to create customizable synthetic sounds, apply a wide range of effects, loop them, sequence multiple sounds into patterns, import external audio files, and even record from a microphone. This tool aims to facilitate exploration and replication of "autistic vowel language", sequences of sounds and gaps to express emotion, that could potentially aid in understanding or communicating with non-verbal autistic individuals.
+&nbsp;&nbsp;&nbsp;The Autistic Synth Machine (ASM) version 2.2 is a web-based audio synthesizer designed to generate and manipulate vowel-like sounds, hums, groans, and imported audio that mimic non-verbal vocalizations often associated with autistic communication. Built using HTML, CSS, and JavaScript with the Web Audio API, it allows users to create customize synthetic sounds, apply a wide range of effects, loop them, sequence multiple sounds into patterns, import external audio files, and even record from a microphone. This tool aims to facilitate exploration and replication of "autistic vowel language", sequences of sounds and gaps to express emotion, that could potentially aid in understanding or communicating with non-verbal autistic individuals.
 
 &nbsp;&nbsp;&nbsp;Key enhancements in version 2.2 include support for importing WAV/audio files as "media" sounds with dedicated controls (e.g., playback speed, pitch shift, reverse, trimming, EQ), microphone recording for capturing real vocalizations, global master effects like compressor and delay, BPM synchronization, dynamic sequencer step adjustments, preset/sequence saving/loading/export/import, audio export for individual sounds or full sequences, and improved UI with fine-tune buttons and value displays.
 
@@ -25,7 +25,7 @@
 - **Sound Generation (Vowels)**: Create vowel-like sounds using extensive presets (e.g., "Ah", "Ee", "Hum", "Groan", diphthongs like "Ai", nasals, elongated sounds) with adjustable parameters for pitch, ADSR envelope (Attack, Decay, Sustain, Release), hold duration, formant frequencies/gains (F1-F6), and effects like humming, breathiness, jaw jitter, detune, vibrato, reverb, pitch jitter, amplitude shimmer, distortion, chorus, LFO assignment, noise gate, and waveform selection (glottal, sine, sawtooth, square).
 - **Media Import**: Load external WAV or audio files as sounds, with controls for playback speed (0.5-2x), pitch shift (-1200 to 1200 cents), reverse playback, trim start/end, 3-band EQ (freq/gain for low/mid/high), alongside shared features like volume, pan, reverb, fades, and looping.
 - **Multiple Sounds**: Start with Sound A; dynamically add more (B, C, etc.) via "Add Sound" button. Mix vowels and imported media.
-- **Looping**: Enable per-sound looping with customizable gaps (0-3s); supports BPM-sync for rhythmic alignment.
+- **Looping**: Enable per-sound looping with customize gaps (0-3s); supports BPM-sync for rhythmic alignment.
 - **Transitions and Fades**: Smooth morphing between start/mid/end presets over transition time (0-5s); bell-curve fade-in/out (0-2s) for natural starts/ends.
 - **Sequencer**: Dynamic 8+ step sequencer (increase/decrease steps) to trigger sounds in patterns. Supports polyphony, global loop with gap (0-3s), and saving/loading/export/import of sequences including sound presets.
 - **Live Adjustments**: Real-time tweaks to most parameters while playing; fine-tune sliders with +/- buttons.
@@ -48,7 +48,7 @@ ASM is a single-file HTML application. No installation or server required!
 4. **Dependencies**: None, everything is self-contained in the HTML file.
 5. **Browser Notes**: For optimal performance, use headphones or external speakers. If audio doesn't play, check browser settings (e.g., autoplay policies) or resume the AudioContext via a click. Microphone recording requires HTTPS or localhost in some browsers.
 
-**Note**: Test in incognito mode if extensions interfere. The app works offline after inital loading.
+**Note**: Test in incognito mode if extensions interfere. The app works offline after initial loading.
 
 ## Usage
 
@@ -195,6 +195,24 @@ Changes apply globally and update in real-time.
 
 ###### screenshot of main program bottom
 ![ASM Screenshot](https://raw.githubusercontent.com/DigiMancer3D/ASM/refs/heads/main/Screenshot_20260206_092724.png) 
+
+---
+
+## Themed Modes
+
+#### ASM v2.2 theme mode is "**Darkened De-Chromium**".
+###### *ASM "**Darkened De-Chromium**"*, aka *DD-C*, theme is designed to showcase all data easily that may also induce non-exclusive non-inclusive emotions by viewers looking at the program workspace. 
+
+#### Testing versions, some previous versions & beta-versions ASM theme mode is "**Papered**" theme.
+###### *ASM "**Papered**"*, aka *main*, theme is designed for quick build testing and getting the mass of the program working. 
+
+###### &nbsp;&nbsp;&nbsp;ASM themes attempt to be low visual impact while showing the places of interest. ASM's *non-exclusive non-inclusive* design fades much of the colors into a darkened void then highlights some points of interest (like buttons, tittles, values) in correlated bright colors (like orange, green & white). 
+
+###### &nbsp;&nbsp;&nbsp; For operators of ASM, they can learn to easily find their data point to adjust and modify on the fly. 
+
+###### &nbsp;&nbsp;&nbsp; For the autistic individuals, they will hopefully not be fully engaged with the program and will want to dismiss the dark work space. 
+
+###### &nbsp;&nbsp;&nbsp; PLEASE NOTE: Some individuals may get "stare locked" on & because of the display, for it's darkened nature. This is why all building and testing is done in the ASM main theme (*Papered*), so there is **always an alternative for operators & individuals**. 
 
 ---
 
